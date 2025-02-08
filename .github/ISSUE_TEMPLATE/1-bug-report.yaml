@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hello there!
+
+        To expedite issue processing please search open and closed issues before submitting a new one.
+        Existing issues often contain information about workarounds, resolution, or progress updates.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How would you rate the Priority of this Bug?
+      options:
+        - low
+        - medium
+        - high
+        - uncertain
+      multiple: false
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: minimal-reproduction
+    attributes:
+      label: Minimal Reproduction
+      description: |
+        Simple steps to reproduce this bug.
+
+        **Please include:**
+        * commands run (including args)
+        * packages added
+        * related code changes
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else relevant?
+    validations:
+      required: false
