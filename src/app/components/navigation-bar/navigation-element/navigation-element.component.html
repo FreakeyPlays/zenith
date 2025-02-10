@@ -1,9 +1,11 @@
 <a
+  #rla="routerLinkActive"
   class="navigation-element"
-  role="tab"
-  aria-label="navigation"
   routerLink="{{ link() }}"
   routerLinkActive="active"
+  role="tab"
+  tabindex="0"
+  [attr.aria-selected]="rla.isActive ? 'true' : 'false'"
 >
   <span class="navigation-element_content">
     <span aria-hidden="true" class="navigation-element_active-indicator"></span>

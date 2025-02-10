@@ -25,6 +25,10 @@
   width: 100%;
   text-decoration: none;
   color: #000;
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-touch-callout: none;               
+  user-select: none;                          
+  touch-action: manipulation; 
 
   .navigation-element_content {
     height: 2rem;
@@ -62,9 +66,14 @@
     z-index: 10;
     font-size: 0.75rem;
     line-height: 1rem;
+    font-weight: 500;
   }
 
   &.active {
+    .navigation-element_label {
+      font-weight: 600;
+    }
+
     .navigation-element_content {
       .navigation-element_active-indicator {
         width: 4rem;

@@ -1,4 +1,4 @@
-<div class="navigation-bar" role="tablist" aria-label="navigation">
+<nav class="navigation-bar" role="tablist" aria-label="Main App Navigation">
   @for (route of routes; track $index) {
     <app-navigation-element
       label="{{ route.label }}"
@@ -6,4 +6,4 @@
       link="{{ route.link }}"
     />
   }
-</div>
+</nav>
