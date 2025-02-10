@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-workouts-view',
   imports: [],
   templateUrl: './workouts-view.component.html',
-  styles: ``
+  styleUrl: './workouts-view.component.scss',
 })
 export class WorkoutsViewComponent {
 

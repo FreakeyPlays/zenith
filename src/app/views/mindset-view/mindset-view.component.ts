@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-mindset-view',
   imports: [],
   templateUrl: './mindset-view.component.html',
-  styles: ``
+  styleUrl: './mindset-view.component.scss',
 })
 export class MindsetViewComponent {
 

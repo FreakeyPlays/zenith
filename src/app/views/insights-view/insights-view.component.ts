@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-insights-view',
   imports: [],
   templateUrl: './insights-view.component.html',
-  styles: ``
+  styleUrl: './insights-view.component.scss',
+
 })
 export class InsightsViewComponent {
 

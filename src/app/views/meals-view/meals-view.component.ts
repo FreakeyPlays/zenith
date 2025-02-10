@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-meals-view',
   imports: [],
   templateUrl: './meals-view.component.html',
-  styles: ``
+  styleUrl: './meals-view.component.scss',
 })
 export class MealsViewComponent {
 
