@@ -1,0 +1,17 @@
+<a
+  class="navigation-element"
+  role="tab"
+  aria-label="navigation"
+  routerLink="{{ link() }}"
+  routerLinkActive="active"
+>
+  <span class="navigation-element_content">
+    <span aria-hidden="true" class="navigation-element_active-indicator"></span>
+    <span class="navigation-element_icon">
+      <mat-icon class="material-symbols-outlined fill-sky-500">
+        {{ icon() }}
+      </mat-icon>
+    </span>
+  </span>
+  <span class="navigation-element_label">{{ label() }}</span>
+</a>

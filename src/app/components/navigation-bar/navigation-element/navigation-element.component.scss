@@ -1,0 +1,64 @@
+:host {
+  display: contents;
+}
+
+.navigation-element {
+  flex: 1 1 0%;
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  appearance: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 3rem;
+  min-width: 3rem;
+  outline: none;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+
+  .navigation-element_content {
+    height: 2rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+    .navigation-element_active-indicator {
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      background-color: #dbeafe;
+      border-radius: 9999px;
+    }
+
+    .navigation-element_icon {
+      z-index: 10;
+
+      .fill-sky-500 {
+        fill: #0ea5e9;
+      }
+    }
+  }
+
+  .navigation-element_label {
+    height: 1rem;
+    opacity: 1;
+    z-index: 10;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}

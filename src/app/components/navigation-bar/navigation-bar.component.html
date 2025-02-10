@@ -1,0 +1,9 @@
+<div class="navigation-bar" role="tablist" aria-label="navigation">
+  @for (route of routes; track $index) {
+    <app-navigation-element
+      label="{{ route.label }}"
+      icon="{{ route.icon }}"
+      link="{{ route.link }}"
+    />
+  }
+</div>
