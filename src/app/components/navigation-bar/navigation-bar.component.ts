@@ -9,9 +9,9 @@ import { NavigationElementComponent } from './navigation-element/navigation-elem
 })
 export class NavigationBarComponent {
   routes = [
-    { label: 'Meals', link: '/meals', icon: 'grocery' },
+    { label: 'Meals', link: '/meals', icon: 'nutrition' },
     { label: 'Workouts', link: '/workouts', icon: 'exercise' },
     { label: 'Mindset', link: '/mindset', icon: 'psychology' },
-    { label: 'Insights', link: '/insights', icon: 'data_usage' },
+    { label: 'Insights', link: '/insights', icon: 'pie_chart' },
   ];
 }
