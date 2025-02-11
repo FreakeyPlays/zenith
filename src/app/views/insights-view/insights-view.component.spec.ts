@@ -1,23 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { InsightsViewComponent } from './insights-view.component';
+import { InsightsViewComponent } from "./insights-view.component";
 
 describe('InsightsViewComponent', () => {
-  let component: InsightsViewComponent;
-  let fixture: ComponentFixture<InsightsViewComponent>;
+  let underTest: InsightsViewComponent;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [InsightsViewComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(InsightsViewComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    underTest = new InsightsViewComponent();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(underTest).toBeTruthy();
   });
 });

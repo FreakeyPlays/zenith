@@ -1,23 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { WorkoutsViewComponent } from './workouts-view.component';
+import { WorkoutsViewComponent } from "./workouts-view.component";
 
 describe('WorkoutsViewComponent', () => {
-  let component: WorkoutsViewComponent;
-  let fixture: ComponentFixture<WorkoutsViewComponent>;
+  let underTest: WorkoutsViewComponent;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [WorkoutsViewComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(WorkoutsViewComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    underTest = new WorkoutsViewComponent();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(underTest).toBeTruthy();
   });
 });

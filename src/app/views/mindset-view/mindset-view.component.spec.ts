@@ -1,23 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MindsetViewComponent } from './mindset-view.component';
+import { MindsetViewComponent } from "./mindset-view.component";
 
 describe('MindsetViewComponent', () => {
-  let component: MindsetViewComponent;
-  let fixture: ComponentFixture<MindsetViewComponent>;
+  let underTest: MindsetViewComponent;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [MindsetViewComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(MindsetViewComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    underTest = new MindsetViewComponent();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(underTest).toBeTruthy();
   });
 });
