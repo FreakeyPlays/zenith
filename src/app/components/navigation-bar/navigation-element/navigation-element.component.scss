@@ -24,7 +24,7 @@
   text-align: center;
   width: 100%;
   text-decoration: none;
-  color: #000;
+  color: var(--mat-sys-on-surface) !important;
   -webkit-tap-highlight-color: transparent; 
   -webkit-touch-callout: none;               
   user-select: none;                          
@@ -45,7 +45,7 @@
       display: flex;
       justify-content: center;
       position: absolute;
-      background-color: #dbeafe;
+      background-color: var(--mat-sys-secondary-container) !important;
       border-radius: 9999px;
       transition: width ease-in-out .1s, opacity ease-in-out .1s;
       opacity: 0;
@@ -72,12 +72,14 @@
   &.active {
     .navigation-element_label {
       font-weight: 600;
+      color: var(--mat-sys-on-surface) !important;
     }
 
     .navigation-element_content {
       .navigation-element_active-indicator {
         width: 4rem;
         opacity: 1;
+        color: var(--mat-sys-on-secondary-container) !important;
         transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out;
       }
 
